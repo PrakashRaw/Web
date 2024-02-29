@@ -1,0 +1,132 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+}
+
+ .container li{
+    display: flex;
+    gap: 180px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-style: bold;
+    animation: translation 3s linear infinite;
+}
+
+@keyframes translation {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+.logo {
+    animation: rotation 3s linear infinite;
+}
+
+@keyframes rotation {
+    to {
+        transform:rotate(360deg) ;
+    }
+}
+
+.face{
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-decoration: none;
+}
+.insta{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    color: #fff; 
+    position: absolute;
+    top: 30%;
+    left: 30%;                               
+}
+.login{
+     font-family: sans-serif;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.option{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+.section{
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f2f2f2;
+    
+    
+}
+
+.image_container{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-between;
+  
+}
+.image_container img{
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+    margin-left: 30px;
+   
+}
+.Bike{
+background: transparent;
+animation: ani 3s infinite ;
+transition: all ;
+
+}
+@keyframes ani{
+    from{
+        transform: translate(-200px);
+    }
+    to{
+        transform:translateX(200px) skewY(-30deg);
+       
+    }
+}
+.car{
+    border-radius:120px 20px 120px 20px;;
+}
+.cycle{
+    background: transparent;
+animation: anima 3s infinite ;
+transition: all ;
+}
+@keyframes anima{
+    from{
+        transform: translate(-200px) translateY(0px);
+    }
+    to{
+        transform:translateX(200px) translateY(-50px) skewY(30deg);
+       
+    }
+}
+
